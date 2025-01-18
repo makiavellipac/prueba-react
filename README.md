@@ -86,3 +86,39 @@ Lenguaje de tipado basado en javascrypt su principal funcion es manejo de errore
 ```js
 Lenguaje de tipado basado en javascrypt su principal funcion es manejo de errores
 ```
+- ¿Cuál es la diferencia entre function y arrow function?
+```js
+La manera en la que se llama por ejemplo:
+
+function miFunction( var1, var2){
+
+}
+
+Arrow function:
+
+const mifunction = (var1, var2)=> {
+
+}
+```
+- ¿Qué es el &quot;contexto&quot; (this) en JavaScript?
+```js
+Se hace referencia al objeto que se va a ocupar en cierta linea de codigo
+```
+- ¿Qué es el &quot;DOM&quot; y cómo se manipula con JavaScript?
+```js
+Es la manera de acceder y manipular los elementos de una pagina web se manipulan y acceden desde el document
+```
+- ¿Qué es un &quot;event listener&quot; y cómo se añade a un elemento del DOM?
+```js
+Permite escuchar eventos dentro del document selecionado, y para añadir un elemento en el dom es con accediendo al metodo document.createElement();
+```
+- ¿Cómo se realiza una solicitud AJAX en JavaScript?
+```js
+const Http = new XMLHttpRequest();
+const url='https://rickandmortyapi.com/api/character';
+Http.open("GET", url); // POST, GET, UPDATE
+Http.send();
+Http.onreadystatechange = (e) => {
+  console.log(Http.responseText)
+}
+```
